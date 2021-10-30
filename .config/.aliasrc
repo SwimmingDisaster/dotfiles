@@ -1,0 +1,36 @@
+export CC=/usr/bin/clang
+export CXX=/usr/bin/clang++
+
+export GTK_THEME=Adwaita:dark
+export GTK_THEME_VARIANT="dark"
+
+export XDG_CONFIG_HOME=$HOME/.config
+export XDG_CACHE_HOME=$HOME/.cache
+export XDG_DATA_HOME=$HOME/.local/share
+export XDG_STATE_HOME=$HOME/.local/state
+
+export XAUTHORITY="$XDG_RUNTIME_DIR"/Xauthority
+export GTK2_RC_FILES="$XDG_CONFIG_HOME"/gtk-2.0/gtkrc
+
+export HISTFILE="$XDG_STATE_HOME"/zsh/history
+export CALCHISTFILE=$XDG_CACHE_HOME/calc/history
+export LESSHISTFILE=$XDG_CACHE_HOME/less/history
+export WGETRC=$XDG_CONFIG_HOME/wget/wgetrc
+
+export EDITOR=vim
+export VIMINIT='let $MYVIMRC="$XDG_CONFIG_HOME/vim/vimrc" | source $MYVIMRC'
+
+alias pacman='pacman --color=always'
+
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -X -a -1 --group-directories-first'
+alias lh='ls -X -a --group-directories-first'
+alias lash='ls -laSh --group-directories-first'
+
+# alias duah='du -ah --max-depth=1 . | sort -h'
+alias duah='f(){ du -ah --max-depth=1 $1 | sort -h }; f'
+alias fehi='feh --auto-zoom --scale-down'
+alias wttr='curl wttr.in/Sabac'
+
+alias git-dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'

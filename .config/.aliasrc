@@ -32,5 +32,6 @@ alias lash='ls -laSh --group-directories-first'
 alias duah='f(){ du -ah --max-depth=1 $1 | sort -h }; f'
 alias fehi='feh --auto-zoom --scale-down'
 alias wttr='curl wttr.in/Sabac'
+alias less='less -r --use-color'
 
 alias git-dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'

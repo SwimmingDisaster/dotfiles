@@ -31,12 +31,12 @@ set guitablabel=%t
 set relativenumber
 set nu
 set clipboard=unnamed
-set foldmethod=syntax
+" set foldmethod=syntax
 
 set undofile " Maintain undo history between sessions
 
-set fmr={,}
-set fdm=marker
+" set fmr={,}
+" set fdm=marker
 
 set noerrorbells
 set novisualbell
@@ -122,12 +122,12 @@ nmap <C-B> :!clear && MSBuild.exe GAME.sln //v:Minimal //p:Configuration=Debug /
 " in your .vimrc (_vimrc for Windows)
 map <leader>fm gg=G``zz
 
-inoremap " ""<left>
-inoremap ' ''<left>
-inoremap ( ()<left>
-inoremap [ []<left>
-inoremap { {}<left>
-inoremap {<CR> {<CR>}<ESC>O
+" inoremap " ""<left>
+" inoremap ' ''<left>
+" inoremap ( ()<left>
+" inoremap [ []<left>
+" inoremap { {}<left>
+" inoremap {<CR> {<CR>}<ESC>O
 
 autocmd! BufNewFile,BufRead *.vs,*.fs set ft=glsl
 
